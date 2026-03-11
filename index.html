@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K.A.S — Bracelets Artisanaux</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     NAVIGATION
+════════════════════════════════ -->
+<nav>
+  <a href="#" class="nav-logo">K<span>.</span>A<span>.</span>S</a>
+  <ul class="nav-links">
+    <li><a href="#collections">Collections</a></li>
+    <li><a href="#products">Boutique</a></li>
+    <li><a href="#process">Savoir-faire</a></li>
+    <li><a href="#about">A Propos</a></li>
+  </ul>
+  <button class="nav-cart" onclick="toggleCart()">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+      <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+      <line x1="3" y1="6" x2="21" y2="6"/>
+      <path d="M16 10a4 4 0 01-8 0"/>
+    </svg>
+    Panier <span class="cart-badge" id="cartCount">0</span>
+  </button>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- ══════════════════════════════
+     HERO
+════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg" style="background-image: url('img/aed1dd17a3e992f45176acc0f31a17e0.jpg');"></div>
+  <div class="hero-content">
+    <p class="hero-tag">Bijoux Artisanaux Premium</p>
+    <h1>Bracelets<br><em>uniques</em><br>faits main</h1>
+    <p class="hero-desc">Chaque bracelet K.A.S est cree avec passion — pierres naturelles, perles de qualite, finitions soignees pour sublimer votre style.</p>
+    <div class="hero-btns">
+      <a href="#products" class="btn-primary">Voir la boutique</a>
+      <a href="#about" class="btn-outline">Notre histoire</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Defiler
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     MARQUEE
+════════════════════════════════ -->
+<div class="marquee-wrap">
+  <div class="marquee">
+    <span class="marquee-item"><span class="marquee-dot"></span>Pierres Naturelles</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Fait a la Main</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Livraison Rapide</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Qualite Premium</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Personnalisable</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Idee Cadeau</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Pierres Naturelles</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Fait a la Main</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Livraison Rapide</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Qualite Premium</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Personnalisable</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Idee Cadeau</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     COLLECTIONS
+════════════════════════════════ -->
+<section id="collections">
+  <div class="section-header fade-in">
+    <p class="section-tag" style="justify-content:center">Nos Univers</p>
+    <h2>Nos <em>Collections</em></h2>
+    <p class="sub">Des creations qui subliment chaque poignet</p>
+  </div>
+  <div class="collections-scroll fade-in">
+
+    <div class="col-card">
+      <img src="img/78c78d22ead02b276bf616f28f306cf9.jpg" alt="Oeil de Tigre">
+      <div class="col-overlay">
+        <span class="col-tag">Collection Signature</span>
+        <h3 class="col-title">Oeil de Tigre</h3>
+        <span class="col-link">Explorer</span>
+      </div>
+    </div>
+
+    <div class="col-card">
+      <img src="img/7ea92ae19935809c76a5fe38d43f11ed.jpg" alt="Corail Rouge">
+      <div class="col-overlay">
+        <span class="col-tag">Edition Luxe</span>
+        <h3 class="col-title">Corail Rouge</h3>
+        <span class="col-link">Explorer</span>
+      </div>
+    </div>
+
+    <div class="col-card">
+      <img src="img/158875c6f6c53747df02e98e73effcf5.jpg" alt="Black Gold">
+      <div class="col-overlay">
+        <span class="col-tag">Edition Limitee</span>
+        <h3 class="col-title">Black &amp; Gold</h3>
+        <span class="col-link">Explorer</span>
+      </div>
+    </div>
+
+    <div class="col-card">
+      <img src="img/59a6f24e58358062a821e5c7c20cdcbb.jpg" alt="Shamballa">
+      <div class="col-overlay">
+        <span class="col-tag">Shamballa</span>
+        <h3 class="col-title">Cristaux</h3>
+        <span class="col-link">Explorer</span>
+      </div>
+    </div>
+
+    <div class="col-card">
+      <img src="img/41acae3a2684c6a55513d4b6662dd02c.jpg" alt="Prenom">
+      <div class="col-overlay">
+        <span class="col-tag">Sur Mesure</span>
+        <h3 class="col-title">Prenom &amp; Message</h3>
+        <span class="col-link">Explorer</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     BOUTIQUE / PRODUITS
+════════════════════════════════ -->
+<section id="products">
+  <div class="products-header fade-in">
+    <div>
+      <p class="section-tag">Notre Boutique</p>
+      <h2>Nos <em>Creations</em></h2>
+    </div>
+    <div class="filter-tabs">
+      <button class="filter-tab active" onclick="filterProducts('all', this)">Tous</button>
+      <button class="filter-tab" onclick="filterProducts('bracelet', this)">Bracelets</button>
+      <button class="filter-tab" onclick="filterProducts('duo', this)">Duos</button>
+      <button class="filter-tab" onclick="filterProducts('special', this)">Speciaux</button>
+    </div>
+  </div>
+  <div class="products-grid fade-in" id="productsGrid">
+    <!-- Rempli automatiquement par script.js -->
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     A PROPOS
+════════════════════════════════ -->
+<section id="about">
+  <div class="about-visual fade-in">
+    <div class="about-img-main">
+      <img src="img/225582d189f2c9aef68e28cb278e52d7.jpg" alt="K.A.S Artisanat">
+    </div>
+    <div class="about-img-accent">
+      <img src="img/78c78d22ead02b276bf616f28f306cf9.jpg" alt="Bracelet K.A.S">
+    </div>
+    <span class="about-label">Artisanal</span>
+  </div>
+  <div class="fade-in">
+    <p class="section-tag">Notre Histoire</p>
+    <h2>Chaque perle,<br>une <em>histoire</em></h2>
+    <p class="body-text">K.A.S est nee d'une passion profonde pour la beaute des pierres naturelles et l'art du bracelet artisanal. Chaque creation est unique, faconnee a la main avec soin et precision.</p>
+    <p class="body-text">Nous selectionnons les meilleures pierres — oeil de tigre, amethyste, obsidienne, corail — pour creer des bijoux qui vous ressemblent et racontent votre histoire.</p>
+    <ul class="values-list">
+      <li>Pierres naturelles 100% authentiques</li>
+      <li>Chaque piece unique, faite a la main</li>
+      <li>Personnalisation sur demande</li>
+      <li>Livraison soignee avec emballage cadeau</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SAVOIR-FAIRE
+════════════════════════════════ -->
+<section id="process">
+  <div class="process-inner">
+    <div class="fade-in">
+      <p class="section-tag">Notre Savoir-Faire</p>
+      <h2>De la <em>pierre</em> au bijou</h2>
+    </div>
+    <div class="steps-grid fade-in">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-icon">*</div>
+        <h3 class="step-title">Selection</h3>
+        <p class="step-desc">Choix minutieux des pierres naturelles et perles pour leur qualite, leur energie et leur beaute.</p>
+        <div class="step-connector"></div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-icon">o</div>
+        <h3 class="step-title">Conception</h3>
+        <p class="step-desc">Design de chaque modele, en jouant sur les associations de couleurs, matieres et tailles de perles.</p>
+        <div class="step-connector"></div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-icon">+</div>
+        <h3 class="step-title">Creation</h3>
+        <p class="step-desc">Chaque bracelet est monte a la main, perle par perle, avec un fil elastique resistant de qualite.</p>
+        <div class="step-connector"></div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-icon">-</div>
+        <h3 class="step-title">Livraison</h3>
+        <p class="step-desc">Controle qualite, emballage soigne et expedition rapide apres confirmation via WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     TEMOIGNAGES
+════════════════════════════════ -->
+<section id="testimonials">
+  <div class="testimonials-inner">
+    <div class="section-header fade-in">
+      <p class="section-tag" style="justify-content:center">Temoignages</p>
+      <h2>Ce qu'ils <em>disent</em></h2>
+    </div>
+    <div class="testimonials-grid fade-in">
+
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="testimonial-text">Le bracelet oeil de tigre est absolument magnifique. La qualite des pierres est exceptionnelle. Commander via WhatsApp, c'est rapide et facile !</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#c17f5a,#8a5030)">A</div>
+          <div>
+            <div class="author-name">Aminata D.</div>
+            <div class="author-loc">Port-au-Prince, Haiti</div>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="testimonial-text">J'ai commande le duo Yin Yang en cadeau. Il a adore ! Service super reactif sur WhatsApp et livraison rapide. Merci K.A.S !</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#7a8a6a,#4a5a3a)">M</div>
+          <div>
+            <div class="author-name">Marie C.</div>
+            <div class="author-loc">Cap-Haitien, Haiti</div>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="testimonial-text">Le bracelet prenom est trop beau, exactement ce que je voulais. Commander par WhatsApp c'est trop simple. Je recommande a tous !</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#5a6a9a,#3a4a7a)">J</div>
+          <div>
+            <div class="author-name">Jean-Paul M.</div>
+            <div class="author-loc">Petion-Ville, Haiti</div>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="#" class="footer-logo">K<span>.</span>A<span>.</span>S</a>
+      <p class="footer-tagline">Bracelets artisanaux en pierres naturelles, crees avec passion et livres avec soin partout en Haiti.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link">Ig</a>
+        <a href="#" class="social-link">Fb</a>
+        <a href="https://wa.me/+509 48 61 3794" class="social-link" target="_blank">Wa</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Boutique</h4>
+      <ul>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#products">Bracelets</a></li>
+        <li><a href="#products">Duos &amp; Couples</a></li>
+        <li><a href="#products">Speciaux</a></li>
+        <li><a href="#products">Sur Mesure</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Informations</h4>
+      <ul>
+        <li><a href="#about">A Propos</a></li>
+        <li><a href="#process">Savoir-faire</a></li>
+        <li><a href="#testimonials">Avis Clients</a></li>
+        <li><a href="#">Guide des Tailles</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Commander</h4>
+      <ul>
+        <li><a href="#">Via WhatsApp</a></li>
+        <li><a href="#">Livraison Haiti</a></li>
+        <li><a href="#">Retours</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Personnalisation</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&#169; 2024 K.A.S &#8212; Tous droits reserves</span>
+    <span>Bracelets Artisanaux &#183; Fait avec &#10084; en Haiti</span>
+    <span> Delmas 75 Faustin 1er</span>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════
+     PANIER SIDEBAR
+════════════════════════════════ -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <span class="cart-title">Mon Panier</span>
+    <button class="cart-close" onclick="toggleCart()">&#x2715;</button>
+  </div>
+  <div class="cart-items" id="cartItemsContainer">
+    <div class="cart-empty">Votre panier est vide.<br><br><em>Decouvrez nos creations</em></div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none">
+    <div class="cart-subtotal">
+      <span class="subtotal-label">Sous-total</span>
+      <span class="subtotal-amount" id="cartTotal">$0 HTG</span>
+    </div>
+    <button class="whatsapp-btn" onclick="orderOnWhatsApp()">
+      <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Commander via WhatsApp
+    </button>
+    <p class="cart-note">Vous serez redirige vers WhatsApp pour finaliser votre commande. Reponse sous 24h !</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
